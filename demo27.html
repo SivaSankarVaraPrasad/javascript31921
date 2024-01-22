@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            demo27
+        </title>
+        <script>
+            // declaring an array using new keyword
+            let arr = new Array() // size is optional
+            const n = parseInt(window.prompt("enter array size",1))
+            window.alert("reading Array elements")
+
+            for( let i = 0 ; i<n ; i++ ){
+                arr[i] = parseInt(prompt("enter Element"+(i+1),i))
+            }
+
+            document.writeln("Array elements</br>");
+            for(let element of arr){
+                document.writeln(element+"</br>")
+            }
+
+            document.writeln("</br>")
+
+            const course = new Array("siva","sankara","vara","prasad") // constructor
+
+            document.writeln("course array length : "+course.length+"</br>")
+
+            document.writeln("course array type : "+typeof course+"</br>")
+
+            document.writeln("Course Array elements : </br>")
+
+            for( let c of course){
+                document.writeln(c+"</br>")
+            }
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            demo33
+        </title>
+        <script>
+            let txt = 'Kluniversity'
+            document.writeln(`Text = ${txt}</br>`)
+            document.writeln(`Length = ${txt.length}</br>`)
+            document.writeln(`${txt.concat(" cse")}</br>`)
+            document.writeln(`${txt.toLowerCase()}</br>`)
+            document.writeln(`${txt.toUpperCase()}</br>`)
+            document.writeln(`${txt.charAt(11)}</br>`) // index starts with 0 
+            document.writeln(`${txt.substring(2,5)}</br>`) // (start index, end index)
+            document.writeln(`${txt[3]}</br>`)
+            document.writeln(`${txt[4]},${txt[5]},${txt[6]}</br>`)
+            document.writeln(`<u>display characters using for of loop</u></br>`)
+            for(const k of txt){
+                document.writeln(k)
+            }
+
+        </script>
+    </head>
+</html>

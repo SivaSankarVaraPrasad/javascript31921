@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            demo30
+        </title>
+        <script>
+            // map method
+            const arr1 = [23,45,62,34,56,78,90]
+            
+            document.writeln("Array arr1 = "+arr1+"</br>")
+
+            const output1 = arr1.map( (number) => number*20 )
+
+            document.writeln("Array output 1 = "+output1+"</br>")
+
+            // filter method
+
+            const arr2 = [10,21,33,40,50,60]
+
+            const output2 = arr2.filter( (number) => number%2 == 0)
+
+            document.writeln("Array arr2 = "+arr2+"</br>")
+
+            document.writeln("Array output 1 = "+output2+"</br>")
+
+            // reduce method
+
+            const arr3 = [10,20,30,40,50]
+            
+            document.writeln("Array arr3 = "+arr3+"</br>")
+
+            const display = (sum,element) => sum = sum + element
+
+            const output3 = arr3.reduce(display,0)
+
+            document.writeln("Array output 3 = "+output3+"</br>")
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

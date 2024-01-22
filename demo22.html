@@ -1,0 +1,26 @@
+<html>
+
+    <head>
+        <title>
+            demo22
+        </title>
+        <script>
+            // passing array to the function 
+            document.writeln("<h1>passing array to the function</br>" )
+            function display(list){
+                let sum = 0
+                for(let element of list){
+                    sum = sum + element
+                }
+
+                return sum
+            }
+            const arr = [10,20,30,40,50] // static array
+            document.writeln("<h1>elements in array = "+arr+"</br>")
+            document.writeln("<h1>Sum of Array = "+display(arr))
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

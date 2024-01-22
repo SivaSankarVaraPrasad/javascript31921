@@ -1,0 +1,37 @@
+<html>
+
+    <head>
+        <title>
+            demo25
+        </title>
+        <script>
+           // arrow function demo
+           let sum = (a,b) => a+b
+           document.writeln("Output = "+sum(11,5)+"</br>") 
+
+           const mul = (a,b) => {
+            let output = a*b
+            return output
+           }
+           document.writeln("Output = "+mul(10,20)+"</br>")
+
+           const flag = (n) => {
+            if(n%2 == 0)
+                return true
+            else
+                return false
+           }
+           let n = parseInt(prompt("Enter value ",0))
+           if(flag(n)){
+            document.writeln(n+" is Even")
+           }
+           else{
+            document.writeln(n+" is odd")
+           }
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

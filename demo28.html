@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>
+            demo28
+        </title>
+        <script>
+            // map object key value pair 
+            const demomap = new Map()
+            demomap.set("id",123)
+            demomap.set("name","KLU")
+            demomap.set("age",40.5)
+            demomap.set("status",false)
+            demomap.set("name","klef") // duplucate key - klu will be updated as klef
+
+            // map size
+            document.writeln("map size - "+demomap.size+"</br>")
+
+            // type of demomap - object
+
+            document.writeln("<u>type of map </u>"+ typeof demomap+"</br>")
+
+            // to get the value with key
+
+            document.writeln( demomap.get("id")+"</br>")
+            document.writeln( demomap.get("location")+"</br>") // undefined
+
+            // check wether key exists or not
+
+            document.writeln(demomap.has("id")+"</br>")
+            document.writeln(demomap.has("location")+"</br>") // return true when key is there in Map otherwise false
+            
+
+            // delete particular key if exists
+
+            document.writeln(demomap.delete("status")+"</br>")
+            document.writeln("map size - "+demomap.size+"</br>")
+
+
+            document.writeln("<u>Display map keys</u></br>")
+
+            // keys() method will return all the keys in the map
+
+            for( let k of demomap.keys())
+            {
+                document.writeln(k)
+            }
+            document.writeln("</br>")
+            
+            document.writeln("<u>Display map values</u></br>")
+
+            // values() method will return all the values in the map
+
+            for( let k of demomap.values())
+            {
+                document.writeln(k)
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display map values with keys</u></br>")
+
+            for( let k of demomap.keys())
+            {
+                document.writeln(k +" - "+ demomap.get(k)+"</br>")
+            }
+            document.writeln("</br>")
+
+            document.writeln("<u>Display map </u></br>")
+
+
+            // entries() method will return all the keys and values  in the map
+
+            for( const [k,v] of demomap.entries())
+            {
+                document.writeln(k+" : "+v+"</br>")
+            }
+
+
+            // clear/delete all the elements in the map
+
+            demomap.clear()
+
+            document.writeln("map size - "+demomap.size+"</br>")
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
